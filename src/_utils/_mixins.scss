@@ -1,0 +1,45 @@
+@import './var';
+
+@mixin telefono{
+    @media (min-width:$telefono){
+          @content;
+    }
+}
+
+@mixin telefono-large{
+    @media (min-width:$telefono-large){
+          @content;
+    }
+}
+
+@mixin tablet{
+    @media (max-width:$tablet){
+          @content;
+    }
+}
+
+@mixin desktop{
+    @media (min-width:$desktop){
+          @content;
+    }
+}
+
+@mixin desktop-large{
+    @media (min-width:$desktop-large){
+          @content;
+    }
+}
+@mixin complete-window{
+    height: 100vh;
+    min-height: 40rem;
+}
+
+@mixin flex-two-column{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+
+    @include tablet{
+        align-items: normal;
+    }
+}

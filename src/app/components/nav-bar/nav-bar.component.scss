@@ -1,0 +1,49 @@
+
+/* You can add global styles to this file, and also import other style files */
+@import '../../../_utils/_var';
+@import '../../../_utils/_mixins';
+@import '../../../_utils/utils';
+nav{
+    background-color:$purple;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    font-family: $secondary;
+    font-weight: 200;
+    padding: 0 1rem;
+    ul {
+        display: inline-flex;
+        gap: .3em;
+        padding: 0;
+        list-style: none;
+        li{
+            &:after{
+                margin: 0 .3rem;
+                content:'|';
+            }
+            &:last-child{
+                &:after{
+                content: '';
+                }
+            }
+        }
+        @include tablet{
+            display: none;
+        }
+    };
+    h1{
+        font-size: 1rem;
+        margin:0;
+        word-break: normal;
+        padding: .5rem;
+        max-width: 5rem;
+        font-weight: 100;
+    }
+    a{
+        color:$white;
+        text-decoration: none;
+        &:hover{
+            font-weight: 400;
+        }
+    }
+}

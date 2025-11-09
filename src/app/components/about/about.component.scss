@@ -1,0 +1,21 @@
+@import '../../../_utils/_var';
+@import '../../../_utils/mixins';
+
+section{
+    @include complete-window;
+    @include flex-two-column;
+
+    background-color: $crema;
+     background-image: url('/assets/HOJA.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+        background-size: 6rem;
+    article{
+        @include tablet{
+            padding: 0 1rem;
+        }
+    }
+    p{
+        max-width: 30rem;
+    }
+}

@@ -1,0 +1,31 @@
+@import '../../../_utils/_var';
+@import '../../../_utils/_mixins';
+
+.bg-image{
+    @include complete-window;
+    background-image: url('/assets/bg.png');
+    width: 100%;
+    background-size: 50%;
+    background-color: $black;
+    @include flex-two-column;
+    .title
+    {   
+        color: white;
+        h1{
+            font-weight: 100;
+            margin-bottom: 2rem;
+            max-width: 20rem;
+        }
+        a{
+            background-color: $purple;
+            padding: .5rem 2rem;
+          
+            color: $white;
+            text-decoration: none;
+            border-radius: .3rem;
+        }
+                @include tablet{
+            padding: 0 1rem;
+        }
+    }
+}

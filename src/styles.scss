@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import '_utils/_var';
+@import '_utils/mixins';
+
+body, html{
+    display: contents;
+    margin:0;
+    padding: 0;
+    box-sizing: content-box;
+}
+p, a{
+  font-family: $principal;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+strong{
+  font-family: $principal;
+  font-weight: 900;
+}

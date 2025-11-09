@@ -1,0 +1,40 @@
+@import '../../../_utils/_var';
+@import '../../../_utils/mixins';
+
+section{
+    background-color: $cafe;
+    padding: 10%;
+    .proyectos-flex{
+        display: flex;
+        flex-direction: row; 
+        gap:1.3rem;
+        flex-wrap: wrap;
+        .box{
+            width: 15rem;
+            background: $gris;
+            border-radius: 1rem;
+            padding: 1rem;
+            flex-grow: 4;
+            flex-shrink: 4;
+            flex-basis: 15rem;
+            font-size:1rem;
+            .tumbnail{
+                margin: 0 auto;
+                height: 10rem;
+                background-color: $white;
+                border-radius: 1rem;
+                position:relative;
+                p{
+                    position: absolute;
+                    bottom:0;
+                    margin: .7rem;
+                    color: $brownSub;
+                    font-weight: 700;
+                }
+            }
+            .tecnologies{
+                color: $verde;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import '../../../_utils/_var';
+@import '../../../_utils/_mixins';
+
+section{
+    @include complete-window;
+    @include flex-two-column;
+    background-color: $crema;
+       background-image: url('/assets/HOJA.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+        background-size: 6rem;
+           @include tablet{
+            padding: 0 1rem;
+        }
+    ul{
+        padding: 0;
+        list-style: none;
+        li{
+            margin-top: 1rem;
+        }
+        a{
+            color:$verde;
+        }
+    }
+}
