@@ -14,7 +14,7 @@ nav{
     ul {
         display: inline-flex;
         gap: .3em;
-        padding: 0;
+        padding: 0 1rem;
         list-style: none;
         li{
             &:after{
@@ -46,4 +46,11 @@ nav{
             font-weight: 400;
         }
     }
+    &.sticky{
+        position: fixed;
+        top: 0;
+        overflow: hidden;
+        z-index: 10;
+        width: 100%;
+        }
 }

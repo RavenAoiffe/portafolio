@@ -1,7 +1,10 @@
-<nav>
+<nav id="nav" [class.sticky] = "sticky" 
+#stickyMenu >
     <h1>
-        <strong>Ameyalli</strong>
-        Yáñez
+        <a href="nav">
+            <strong>Ameyalli</strong>
+            Yáñez
+        </a>
     </h1>
     <ul>
         <li>
@@ -11,7 +14,7 @@
             <a href="#">Experiencia</a>
         </li>
         <li>
-            <a href="#">Portafolio</a>
+            <a href="#portafolio">Portafolio</a>
         </li>
         <li class="none">
             <a href="#">Certificados</a>
@@ -20,7 +23,7 @@
             <a href="#">Habilidades</a>
         </li>
         <li>
-            <a href="#">Contacto</a>
+            <a href="#contact">Contacto</a>
         </li>
         <li>
             <a href="#">CV</a>

@@ -1,0 +1,11 @@
+@import '../../../_utils/mixins';
+
+article{
+    padding: 1rem 0;
+    background-color: $purple;
+    p{
+        display: table;
+        margin: 0 auto;
+        color:$white;
+    }
+}
