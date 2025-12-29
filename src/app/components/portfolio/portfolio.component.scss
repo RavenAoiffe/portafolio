@@ -3,12 +3,18 @@
 
 section{
     background-color: $cafe;
-    padding: 10%;
+    min-height: 50rem;
+    padding: 1rem 3rem;
+    h1{
+        margin: 0;
+        padding-top: 3rem;
+    }
     .proyectos-flex{
         display: flex;
         flex-direction: row; 
         gap:1.3rem;
         flex-wrap: wrap;
+        margin-top: 2rem;
         .box{
             width: 15rem;
             background: $gris;

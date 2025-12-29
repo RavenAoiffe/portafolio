@@ -1,46 +1,17 @@
 <section id="portafolio">
+    <h1>{{titleSection}}</h1>
     <div class="proyectos-flex">
-        <div class="box">
+        @for (project of projectsList; track project.id){
+        <a class="box" href="#">
             <div class="tumbnail">
-                <p>Fábrica Editorial</p>
+                <p>{{project.titulo}}</p>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quo nisi recusandae illum consequatur, repellendus praesentium et quasi sed placeat deserunt qui consequuntur atque natus velit numquam, quia dolores hic.</p>
+            <p>{{project.descripcion}}</p>
             <p class="tecnologies">HTML | CSS | JS </p>
-        </div>
-            <div class="box">
-            <div class="tumbnail">
-                <p>Fábrica Editorial</p>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quo nisi recusandae illum consequatur, repellendus praesentium et quasi sed placeat deserunt qui consequuntur atque natus velit numquam, quia dolores hic.</p>
-            <p>HTML | CSS | JS </p>
-        </div>
-            <div class="box">
-            <div class="tumbnail">
-                <p>Fábrica Editorial</p>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quo nisi recusandae illum consequatur, repellendus praesentium et quasi sed placeat deserunt qui consequuntur atque natus velit numquam, quia dolores hic.</p>
-            <p>HTML | CSS | JS </p>
-        </div>
-            <div class="box">
-            <div class="tumbnail">
-                <p>Fábrica Editorial</p>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quo nisi recusandae illum consequatur, repellendus praesentium et quasi sed placeat deserunt qui consequuntur atque natus velit numquam, quia dolores hic.</p>
-            <p>HTML | CSS | JS </p>
-        </div>
-            <div class="box">
-            <div class="tumbnail">
-                <p>Fábrica Editorial</p>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quo nisi recusandae illum consequatur, repellendus praesentium et quasi sed placeat deserunt qui consequuntur atque natus velit numquam, quia dolores hic.</p>
-            <p>HTML | CSS | JS </p>
-        </div>
-            <div class="box">
-            <div class="tumbnail">
-                <p>Fábrica Editorial</p>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quo nisi recusandae illum consequatur, repellendus praesentium et quasi sed placeat deserunt qui consequuntur atque natus velit numquam, quia dolores hic.</p>
-            <p>HTML | CSS | JS </p>
-        </div>
+        </a>
+        }
+        @empty {
+            <div></div>
+        }
     </div>
 </section>
