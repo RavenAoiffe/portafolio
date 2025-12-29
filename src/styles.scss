@@ -8,16 +8,22 @@ body, html{
     padding: 0;
     box-sizing: content-box;
 }
+h1,h2,h3,h4,h5{
+  font-family: $principal;
+}
 p, a{
   font-family: $principal;
   font-optical-sizing: auto;
   font-style: normal;
 }
 strong{
-  font-family: $principal;
-  font-weight: 900;
+  font-weight: 400;
 }
 
 html{
   scroll-behavior: smooth;
+}
+
+section{
+  padding: 0 3rem;
 }
